@@ -1,0 +1,9 @@
+<div class='container'>
+<h3>수정하기</h3>
+
+  <form action="/questions/update/<%= @one_post.id%>" method="post">
+      이름: <input type='text' name='update_name' value='<%= @one_post.title%>'>
+      질문: <input type='text' name='update_content' value='<%= @one_post.content%>'>
+      <input type='submit' value='물어보기!'>
+  </form>
+</div>
